@@ -150,7 +150,7 @@ dev_t Volume::getShareDevice() {
     return getDiskDevice();
 }
 
-char *getFsType(const char * devicePath) {
+static char *getFsType(const char * devicePath) {
     char *fstype = NULL;
 
     SLOGD("Trying to get filesystem type for %s \n", devicePath);
